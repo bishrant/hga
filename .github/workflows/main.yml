@@ -10,3 +10,7 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "some name"
+      - uses: actions/upload-artifacts@master
+        with:
+          name: webpack artifacts
+          path: public/
